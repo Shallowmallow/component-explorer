@@ -107,6 +107,11 @@ class MiniGraph extends Canvas {
         componentGraphics.clear();
         componentGraphics.setPixels(pixels);
         
+        #if haxeui_hxwidgets 
+        window.refresh();
+        Timer.delay(frame, 10);
+        #else
         Toolkit.callLater(frame);
+        #end
     }
 }
