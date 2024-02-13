@@ -92,7 +92,9 @@ class MainView extends HBox {
 
         ViewManager.instance.registerView({ group: "Miscellaneous", title: "Tooltips", smallIcon: "icons/16/label.png", largeIcon: "icons/32/label.png", viewClass: TooltipsView, relevantFiles: ["views/tooltips.xml", "src/views/TooltipsView.hx"] });
         ViewManager.instance.registerView({ group: "Miscellaneous", title: "Locales", smallIcon: "icons/16/labels2.png", largeIcon: "icons/32/labels2.png", viewClass: LocalesView, relevantFiles: ["views/locales.xml", "src/views/LocalesView.hx", "locales/en.properties", "locales/en_US.properties", "locales/fr.properties", "locales/cy.properties", "locales/pl.properties", "locales/ru.properties"] });
+        #if !hxWidgets
         ViewManager.instance.registerView({ group: "Miscellaneous", title: "Drag", smallIcon: "icons/16/dialog.png", largeIcon: "icons/32/dialog.png", viewClass: DragManagerView, relevantFiles: ["views/drag-manager.xml", "src/views/DragManagerView.hx"] });
+        #end
         ViewManager.instance.registerView({ group: "Miscellaneous", title: "Animation", smallIcon: "icons/16/images.png", largeIcon: "icons/32/images.png", viewClass: AnimationView, relevantFiles: ["views/animation.xml", "src/views/AnimationView.hx"] });
             ViewManager.instance.registerView({ group: "Miscellaneous", subGroup:"Animation", title: "Animated Highlight", smallIcon: "icons/16/images.png", largeIcon: "icons/32/images.png", viewClass: AnimatedHighlightView, relevantFiles: ["views/animated-highlight.xml"] });
             ViewManager.instance.registerView({ group: "Miscellaneous", subGroup:"Animation", title: "Animated Dots", smallIcon: "icons/16/images.png", largeIcon: "icons/32/images.png", viewClass: AnimatedDotsView, relevantFiles: ["views/animated-dots.xml", "src/views/AnimatedDotsView.hx"] });
