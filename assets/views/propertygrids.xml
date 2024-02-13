@@ -19,7 +19,9 @@
                                 <item text="Item 5" />
                                 <item text="Item 6" />
                             </data>
-                        </property>    
+                        </property> 
+                        <property id="actionProp" label="Action Property" type="action" value="Do It!" />
+                        <property id="toggleProp" label="Toggle Property" type="toggle" selected="true" value="Toggle Me!" />
                     </property-group>
                     
                     <property-group text="Secondary Group">
